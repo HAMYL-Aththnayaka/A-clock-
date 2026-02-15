@@ -16,7 +16,17 @@ int main()
         cout<<"Enter Seconds : ";
         cin>>s;
 
-        cout<<"The hour"<<h<<"the minutes"<<m<<"th second"<<s<<endl;
+       if (h < 24 && m < 60 && s < 60){
+        err++;
 
+       }else{
+        system("cls");
+       }
+
+    }
+    while(a == 0){
+        system("cls");
+        cout<<h<<" : "<<m<<" : "<<s<<" : "<<endl;
+        Sleep(1000);
     }
 }
